@@ -67,6 +67,7 @@ gcloud compute instances create reddit-app \
 	sudo apt-get install -y mongodb-org
 	sudo systemctl start mongod
 	sudo systemctl enable mongod
+	export LC_ALL=C
 	git clone -b monolith https://github.com/express42/reddit.git
 	cd reddit && bundle install
 	puma -d

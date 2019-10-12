@@ -43,7 +43,7 @@ Host someinternalhost
 ```
 
 # Task 6 - Basic services Google Cloud Platform (GCP)
-testapp_IP = 34.89.213.85
+testapp_IP = 34.89.134.213<br>
 testapp_port = 9292
 
 - install gcloud sdk
@@ -63,6 +63,7 @@ gcloud compute instances create reddit-app \
 	export LC_ALL=C
 	wget -qO - https://www.mongodb.org/static/pgp/server-3.2.asc | sudo apt-key add -
 	echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
+	sudo apt-get update
 	sudo apt-get install -y mongodb-org
 	sudo systemctl start mongod
 	sudo systemctl enable mongod

@@ -1,6 +1,4 @@
-# insidefree_infra
-
-## Task 5
+# Task 5
 add SSH keys
 GCP path: Compute Engine - Metadata
 Generate SSH key
@@ -44,7 +42,10 @@ Host someinternalhost
 	ProxyCommand ssh -q -W %h:%p bastion
 ```
 
-# 6 - Основные сервисы Google Cloud Platform (GCP)
+# Task 6 - Basic services Google Cloud Platform (GCP)
+testapp_IP = 34.89.173.47
+testapp_port = 9292
+
 - install gcloud sdk
 - create instance 
 ```

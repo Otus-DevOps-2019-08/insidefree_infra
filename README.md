@@ -70,7 +70,6 @@ gcloud compute instances create reddit-app \
 	cd reddit && bundle install
 	puma -d
 	'
-
 ```
 - create firewall rule
 ```

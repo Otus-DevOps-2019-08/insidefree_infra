@@ -43,7 +43,7 @@ Host someinternalhost
 ```
 
 # Task 6 - Basic services Google Cloud Platform (GCP)
-testapp_IP = 34.89.173.47
+testapp_IP = 34.89.213.85
 testapp_port = 9292
 
 - install gcloud sdk

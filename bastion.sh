@@ -2,19 +2,19 @@
 
 gcloud compute instances create bastion \
 	--boot-disk-size=10GB \
-	--image=ubuntu-1604-xenial-v20191010 \
 	--image-family=ubuntu-1604-lts \
+	--image-project=ubuntu-os-cloud \
 	--zone=europe-north1-a \
-	--machine-type=g1-small \
+	--machine-type=f1-micro \
 	--tags=vpn \
 	--restart-on-failure \
 
 gcloud compute instances create someinternalhost \
 	--boot-disk-size=10GB \
-	--image=ubuntu-1604-xenial-v20191010 \
 	--image-family=ubuntu-1604-lts \
+	--image-project=ubuntu-os-cloud \
+	--machine-type=f1-micro \
 	--zone=europe-north1-a \
-	--machine-type=g1-small \
 	--tags=vpn \
 	--restart-on-failure \
 	--no-address
